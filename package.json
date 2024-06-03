@@ -1,0 +1,19 @@
+{
+  "name": "devtool-cli",
+  "version": "0.0.2",
+  "description": "A command to handle devtools",
+  "main": "index.js",
+  "bin": {
+    "devtools": "./bin/launch.js"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "mkdir -p bin && cp src/launch.js bin/launch.js && chmod +x bin/launch.js"
+  },
+  "keywords": [],
+  "author": "wangyuhao",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
